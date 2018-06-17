@@ -1,0 +1,34 @@
+databaseChangeLog:
+    - changeSet:
+        id: 01
+        author: mfomichev
+        changes:
+            - createTable:
+                tableName: PERSON
+                columns:
+                    - column:
+                        name: ID
+                        type: varchar(10)
+                        constraints:
+                            primaryKey: true
+                            nullable: false
+                    - column:
+                        name: LAST_NAME
+                        type: varchar(50)
+                        constraints:
+                            nullable: false
+                    - column:
+                        name: FIRST_NAME
+                        type: varchar(50)
+                        constraints:
+                            nullable: false
+                    - column:
+                        name: PHONE_NUMBER
+                        type: varchar(10)
+                        constraints:
+                            nullable: false
+                    - column:
+                        name: EMAIL
+                        type: varchar(100)
+                        constraints:
+                            nullable: false

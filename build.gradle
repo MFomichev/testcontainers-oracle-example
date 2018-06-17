@@ -24,4 +24,8 @@ repositories {
 
 dependencies {
     compile "org.springframework.boot:spring-boot-starter-web"
+    compile "org.springframework.boot:spring-boot-starter-jdbc"
+    compile "org.projectlombok:lombok"
+    compile "com.oracle:ojdbc6:12.1.0.1-atlassian-hosted"
+    compile "org.liquibase:liquibase-core"
 }

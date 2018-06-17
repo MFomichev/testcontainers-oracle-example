@@ -1,0 +1,10 @@
+spring:
+    datasource:
+        driver-class-name: oracle.jdbc.OracleDriver
+        tomcat:
+            initialSize: 2
+            max-active: 20
+            max-idle: 20
+        url: ${JDBC.URL}
+        username: TEST_USER
+        password: ${JDBC.PASSWORD}
