@@ -31,4 +31,6 @@ dependencies {
 
     testCompile "junit:junit"
     testCompile "org.mockito:mockito-core"
+    testCompile "org.testcontainers:oracle-xe:1.8.0"
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
 }

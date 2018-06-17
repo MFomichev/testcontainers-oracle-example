@@ -1,0 +1,10 @@
+spring:
+    datasource:
+        tomcat:
+            initialSize: 2
+            max-active: 20
+            max-idle: 20
+        url: jdbc:tc:oracle://somehostname:someport/databasename
+        driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+        username: TEST_USER
+        password: TEST_PASSWORD
