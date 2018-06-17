@@ -28,4 +28,7 @@ dependencies {
     compile "org.projectlombok:lombok"
     compile "com.oracle:ojdbc6:12.1.0.1-atlassian-hosted"
     compile "org.liquibase:liquibase-core"
+
+    testCompile "junit:junit"
+    testCompile "org.mockito:mockito-core"
 }
