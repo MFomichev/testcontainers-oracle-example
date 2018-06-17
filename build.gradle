@@ -4,12 +4,14 @@ buildscript {
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.14.RELEASE")
+        classpath("com.netflix.nebula:nebula-project-plugin:4.0.1")
     }
 }
 
 apply plugin: 'java'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
+apply plugin: 'nebula.integtest'
 
 group = 'alfabank'
 
@@ -31,6 +33,7 @@ dependencies {
 
     testCompile "junit:junit"
     testCompile "org.mockito:mockito-core"
-    testCompile "org.testcontainers:oracle-xe:1.8.0"
-    testCompile 'org.springframework.boot:spring-boot-starter-test'
+
+    integTestCompile "org.testcontainers:oracle-xe:1.8.0"
+    integTestCompile 'org.springframework.boot:spring-boot-starter-test'
 }
